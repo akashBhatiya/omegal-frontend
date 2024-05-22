@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import Peer from "peerjs";
-import { useSocket } from "../../context/socketContext";
 import styles from "./style.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { useSocket } from "../../context/socketContext";
