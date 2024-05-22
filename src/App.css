@@ -1,0 +1,422 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*  */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-BlackItalic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Bold.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Black.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Medium.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+ 
+  src: url('./page/fonts/Roboto-BoldItalic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Italic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Light.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-MediumItalic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-LightItalic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-ThinItalic.woff2') format('woff2'),
+      url('./page/fonts/Roboto-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Thin.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./page/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./page/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.bg {
+  background-image: url("../public/images/Landingbg.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bg-dark {
+  background-image: url("../public/images/download.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.sky1 {
+  left: 1%;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 200px;
+}
+
+@keyframes example {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.sky2 {
+  right: 1%;
+  animation-name: example2;
+  animation-duration: 10s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 200px;
+}
+
+@keyframes example2 {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.animate-bg {
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(3.5);
+  }
+
+  100% {
+    transform: scale(5.5);
+  }
+}
+
+.animate-bg1 {
+  animation: animate2 3s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: scale(3.5);
+  }
+
+  100% {
+    transform: scale(5.5);
+  }
+}
+
+.animate-bg2 {
+  animation: animate3 3s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(3.5);
+  }
+}
+
+.is-animate {
+  animation: shake 3000ms infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 0 0 0em rgba(63, 204, 53, 0),
+      0em 0.05em 0.1em rgba(0, 0, 0, 0.2);
+  }
+
+  33.3333% {
+    transform: translate3d(0, 0, 0) scale(1.1);
+    box-shadow: 0 0 0 0em rgba(63, 204, 53, 0.9),
+      0em 0.05em 0.1em rgba(0, 0, 0, 0.5);
+  }
+
+  66.6666% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 0 0 1.2em rgba(63, 204, 53, 0),
+      0em 0.05em 0.1em rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 0 0 0em rgba(63, 204, 53, 0),
+      0em 0.05em 0.1em rgba(0, 0, 0, 0.2);
+  }
+}
+
+.up-call {
+  animation: hangup 3000ms infinite;
+}
+
+@keyframes hangup {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  2% {
+    transform: (0.6px, 0, 0);
+  }
+
+  4% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  6% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  8% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  10% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  12% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  14% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  16% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  18% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  20% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  22% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  24% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  26% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  28% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  30% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  32% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  34% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  36% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  38% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  42% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  42% {
+    transform: translate3d(0.6px, 0, 0);
+  }
+
+  44% {
+    transform: translate3d(-0.6px, 0, 0);
+  }
+
+  46% {
+    transform: translate3d(0em, 0, 0);
+  }
+}
+
+.up-call::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(0);
+  animation: shadow 3000ms infinite;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+
+  33.3333% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+
+  66.6666% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+}
+
+.wallpaper {
+  background-image: url("../public/images/download.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.bgshedow{
+  animation-name: bgshadow;
+  animation-duration: 0.9s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes bgshadow {
+  0%{
+    box-shadow: 0px 0px 100px 30px #356532;
+  }
+  100%{
+    box-shadow: 0px 0px 0px #356532;
+  }
+}
